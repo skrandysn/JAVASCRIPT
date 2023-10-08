@@ -1,0 +1,1 @@
+console.log("Bu inde.js dosyasıdır")
