@@ -23,7 +23,7 @@ console.log(`Hesapladığınız üçgenin alanı: ${alan}`);
 //! ODEV-2 "kareAl" "küpAl" "üsAl"şeklinde üç adet farklı declaration veya expresssion(dec-ex ile yapıcaz) tanımlayın. Bu fonksiyonların ana programdan gereken parametreleri alarak sonuçları ana programa döndürmeli gerekmektedir.
 
 //*kareAl**
-const sayi = Number(
+const sayı = Number(
 	prompt("Lütfen KARESİNİ almak istediğiniz sayıyı giriniz.")
 );
 
