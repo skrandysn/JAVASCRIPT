@@ -29,33 +29,33 @@ console.log("*** Conditions ***");
 //* const n2 = +prompt("Number2");
 //* const n3 = +prompt("Number3");
 
-//* 1.Yöntem
+//! 1.Yöntem
 
-// if (n1 >= n2 && n1 >= n3) {
-//   console.log(`${n1} is biggest`);
-// } else if (n2 >= n1 && n2 >= n3) {
-//   console.log(`${n2} is biggest`);
-// } else if (n3 >= n1 && n3 >= n2) {
-//   console.log(`${n3} is biggest`);
-// }
+//* if (n1 >= n2 && n1 >= n3) {
+//*   console.log(`${n1} is biggest`);*
+//* } else if (n2 >= n1 && n2 >= n3) {
+//*   console.log(`${n2} is biggest`);
+//* } else if (n3 >= n1 && n3 >= n2) {
+//*   console.log(`${n3} is biggest`);
+//* }
 
-//* 2.Yöntem
+//! 2.Yöntem
 
-// let biggest = n1;
+//* let biggest = n1;
 
-// if (n2 >= biggest) {
-//   biggest = n2;
-// }
+//* if (n2 >= biggest) {
+//*   biggest = n2;
+//* }
 
-// if (n3 >= biggest) {
-//   biggest = n3;
-// }
+//* if (n3 >= biggest) {
+//*   biggest = n3;
+//* }
 
-// console.log(`${biggest} is biggest`);
+//* console.log(`${biggest} is biggest`);
 
-// //* 3.Yöntem
+// //! 3.Yöntem
 
-// console.log(`The biggest : ${Math.max(n1, n2, n3)}`);
+//** console.log(`The biggest : ${Math.max(n1, n2, n3)}`);
 
 //? ORNEK3: kosullar birlestirilerek bir degiskene aktarilarak kullanilabilir.
 
@@ -100,26 +100,26 @@ console.log("-------------------------------------");
 //*   case "*":
 //*     sonuc = s1 * s2;
 //*     break;
-// *  case "/":
+// *  case "/":*
 //*     sonuc = s1 / s2;
 // *    break;
-//   default:
-//     alert("Yanlis islem girisi");
-//     break;
-// }
-// console.log(`${s1} ${islem} ${s2} = ${sonuc}`);
+//*   default:
+//*     alert("Yanlis islem girisi");
+//*     break;
+//* }
+//* console.log(`${s1} ${islem} ${s2} = ${sonuc}`);
 
 //**************** TERNARY *******************
 
 //? ORNEK5: Kaldi-Gecti
 
-// const grade = +prompt("Please enter your grade:")
+//* const grade = +prompt("Please enter your grade:")
 
-// const result = grade >= 50 ? "You are succesful" : "You are failed"
+//* const result = grade >= 50 ? "You are succesful" : "You are failed"
 
-// console.log(result)
+//* console.log(result)
 
-// grade >= 90 ? console.log("succes") : console.log("failed")
+//* grade >= 90 ? console.log("succes") : console.log("failed")
 
 const age = 20;
 const gender = "male";

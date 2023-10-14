@@ -23,10 +23,10 @@ if (islem === "+") {
 //! fazla olanlara ise %10 zam yapmak istiyoruz.
 
 //todo ************* BİRİNCİ ÇÖZÜM ********************
-const maas = Number(prompt("Lütfen Maaşınızı Giriniz:"));
-const asgari = 5000;
+const mas = Number(prompt("Lütfen Maaşınızı Giriniz:"));
+const asg = 5000;
 
-maas <= asgari
+mas <= asg
 	? alert(`Güncel maaşınız %50 zamdan sonra ${maas * 1.5} olacaktır.`)
 	: alert(`Güncel maaşınız %10 zamdan sonra ${maas * 1.1} olacaktır.`);
 
