@@ -12,12 +12,12 @@
 //? - Yatay yonde (Sibling)
 
 //! 1- Yukarı Yönde Traverse
-//* parentElement, parentNode yöntemi kullanılarak (aradaki farka bak!!!)
+//*parentElement, parentNode  yöntemi kullanılarak (aradaki farka bak!!!)
 
 //*const list = document.querySelector("li");
 console.log(list);
 
-console.log(list.parent);
+console.log(list.parentElement);
 
 //* closest()
 
@@ -34,7 +34,9 @@ addItem.children[1].style.backgroundColor = "blue";
 addItem.children[2].style.backgroundColor = "purple";
 
 const header = document.querySelector("header");
-const h1 = header.firs;
+const h1 = header.firstElementChild;
+console.log(h1);
+console.log(adddItem.lastElementChild.value);
 
 //! - Yatay yonde (Sibling) Traverse
 

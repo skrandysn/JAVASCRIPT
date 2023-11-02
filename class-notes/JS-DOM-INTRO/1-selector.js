@@ -30,7 +30,7 @@ console.log(itemListArr);
 const itemListSpread = [...itemList]
 console.log(itemListSpread);
 
-//! QUERYSELECTOR() //*tek('' kullanılır) class(. denir) ıd(# denir) seçebilir
+//! QUERYSELECTOR() //*teg ('' kullanılır) class(. denir) ıd(# denir) seçebilir
 
 const myLi = document.querySelector('li') //?tag
 console.log(myLi);
@@ -50,5 +50,8 @@ console.log(
 );
 
 console.log(
-  document.querySelectorAll('section.item-list ul li:nth-child(4)').innerText
+  document.querySelector('section.item-list ul li:nth-child(4)') .innerText
+);
+
+  document.querySelector('section.item-list ul li:nth-child(4)') .innerHTML = "<p>Paragraf</p>"
 );
