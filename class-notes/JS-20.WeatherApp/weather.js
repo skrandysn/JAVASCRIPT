@@ -58,7 +58,7 @@ const getWeatherDataFromApi = async () => {
 		const createdLi = document.createElement("li");
 		createdLi.classList.add("city");
 		createdLi.innerHTML = `
-         <h2> 
+         <h2 > 
          <span>${name}</span>
          <sup>${sys.country}</sup>
          </h2>
@@ -68,8 +68,18 @@ const getWeatherDataFromApi = async () => {
                 <figcaption>${weather[0].description}</figcaption>
           </figure>
          `;
+		//! ÖNEMLİ!!! append sona ekler prepend başa ekler.
+		list.prepend(createdLi); //*sona ekler
 
-		list.prepend(createdLi);
+		//Capturing => parent to child
+		list.addEventListener("click", (e) => {
+			alert("List clicked!");
+		});
+		//Bubbling => child to parent
+		createdLi.addEventListener("click", (e) => {
+			// alert("li element clicked");
+			window.location.href = `https://openweathermap.org/find?q=${name}`;
+		});
 	} catch (error) {
 		msgSpan.innerText = "City not found";
 		setTimeout(() => {

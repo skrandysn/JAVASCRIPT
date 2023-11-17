@@ -19,32 +19,32 @@
 //* Yapilan istek yerine getirilip sonuc degerlerinin dondurulmesi ile kodun calismasi devam eder.
 
 const getNews = async () => {
-  const API_KEY = "8759b0649c83464382629c5e0b89a82b";
-  const URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
+	const API_KEY = "6d8a7f407c2b41b0bd01500b376bfedb";
+	const URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
 
-  try {
-    const res = await fetch(URL);
-    if (!res.ok) {
-      throw new Error("Something went wrong");
-    }
+	try {
+		const res = await fetch(URL);
+		if (!res.ok) {
+			throw new Error("Something went wrong");
+		}
 
-    const data = await res.json();
-    renderNews(data.articles);
+		const data = await res.json();
+		renderNews(data.articles);
 
-    //   console.log(data);
-    //   console.log(data.articles);
-  } catch (error) {
-    // console.log(error)
-    renderError(error);
-  }
+		//   console.log(data);
+		//   console.log(data.articles);
+	} catch (error) {
+		// console.log(error)
+		renderError(error);
+	}
 };
 
 const renderNews = (news) => {
-  console.log(news);
-  const newsDiv = document.getElementById("news");
-  news.forEach((item) => {
-    const {title,description,urlToImage,url}=item //? dest.
-    newsDiv.innerHTML += `
+	console.log(news);
+	const newsDiv = document.getElementById("news");
+	news.forEach((item) => {
+		const { title, description, urlToImage, url } = item; //? dest.
+		newsDiv.innerHTML += `
     <div class="col-md-6 col-lg-4 col-xl-3">
 
     <div class ="card">
@@ -59,17 +59,17 @@ const renderNews = (news) => {
   </div>
 </div>
     `;
-  });
-  //   newsDiv.innerHTML =
+	});
+	//   newsDiv.innerHTML =
 };
 
 const renderError = (err) => {
-  console.log(err);
-  const newsDiv = document.getElementById("news");
-  newsDiv.innerHTML = `
+	console.log(err);
+	const newsDiv = document.getElementById("news");
+	newsDiv.innerHTML = `
   <h2 class="text-danger">News cannot be fetched</h2>
   <img src="./img/404.png" alt="">
-  `
+  `;
 };
 
 getNews();
